@@ -1,0 +1,7 @@
+e:
+cd e:\jd\scripts
+set name=%~n0
+set logname=%date:~0,4%-%date:~5,2%-%date:~8,2%-%time:~0,2%-%time:~3,2%.log
+set logname=%logname: =%
+node %name%.js>e:\jd\logs\%name%\%logname%
+exit 0
